@@ -2,12 +2,13 @@ name: Deploy to dev environment ec2
 
 on:
   push:
-    branches: dev
+    branches: main
       
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
        
